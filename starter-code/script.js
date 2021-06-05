@@ -23,27 +23,35 @@ function generatePassword() {
         var charSet = "";
 
 var charsToUse = [];
+console.log("Chars to use before if statements");
+console.log(charsToUse);
 
         var hasNums = confirm("Do you want numbers?");
         if(hasNums === true ) {
-          charSet = "";
+          charsToUse = charsToUse.concat(numbers)
         }
 
         var hasLower = confirm("Do you want lowercase characters?");
         if(hasLower === true ) {
-          charSet = "";
+          charsToUse = charsToUse.concat(lowerCase)
         }
 
         var hasUpper = confirm("Do you want uppercasecase characters?");
         if(hasUpper === true ) {
-          charSet = "";
+          charsToUse = charsToUse.concat(upperCase)
         }
 
-        var hasSpecial = confirm("Do you want lowercase Characters?");
+        var hasSpecial = confirm("Do you want special characters?");
         if(hasSpecial === true ) {
-          charSet = "";
-        }
+          charsToUse = charsToUse.concat(specialChar)
+        } 
+        
+        console.log("Change to use after if statements");
+        console.log(charsToUse);
 
+
+
+       
 
     // I need 4 confirms for uppercase, lowercase, special characters, and numbers
       // Need for arrays that house these characters
@@ -68,7 +76,6 @@ function writePassword() {
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
-
 }
 
 // Add event listener to generate button
