@@ -7,6 +7,11 @@ function generatePassword() {
     var passwordLength = window.prompt("Enter a length between 8-128 characters")
 
         // conditional statement checks number of characters
+        var charSet = "";
+        
+        if( charTypeLower === "numeric" ) {
+          charSet = "0123456789";
+        }
         
     // I need 4 confirms for uppercase, lowercase, special characters, and numbers
       // Need for arrays that house these characters
