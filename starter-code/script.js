@@ -9,10 +9,10 @@ function generatePassword() {
         // conditional statement checks number of characters
         var charSet = "";
         
-        if( charTypeLower === "numeric" ) {
+        if( ) {
           charSet = "0123456789";
         }
-        
+
     // I need 4 confirms for uppercase, lowercase, special characters, and numbers
       // Need for arrays that house these characters
   // WHEN prompted for password criteria
