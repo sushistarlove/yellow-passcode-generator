@@ -12,4 +12,4 @@
 
 # When you click the button a window prompt will show asking for desired criteria
 
-# After declaing your password criteria a new randomly generated password will appear for you to copy
+# After declaring your password criteria a new randomly generated password will appear for you to copy
