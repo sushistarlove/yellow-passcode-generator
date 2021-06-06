@@ -20,36 +20,54 @@ function generatePassword() {
 
         var specialChar = ['-', '_', '=', '+', '/', '*', '(', ')', '&', '^', '%', '$', '#', '@', '!', '<', '>', '{', '}', '[', ']', ';', ':'];
 
-        var charSet = "";
 
 var charsToUse = [];
 console.log("Chars to use before if statements");
 console.log(charsToUse);
 
         var hasNums = confirm("Do you want numbers?");
+        var requiredChars = [];
+
         if(hasNums === true ) {
           charsToUse = charsToUse.concat(numbers)
+          requiredChars.push(numbers[Math.floor(Math.random() * numbers.length)])
+          console.log(requiredChars)
         }
 
         var hasLower = confirm("Do you want lowercase characters?");
         if(hasLower === true ) {
           charsToUse = charsToUse.concat(lowerCase)
+          requiredChars.push(lowerCase[Math.floor(Math.random() * lowerCase.length)])
+          console.log(requiredChars)
         }
 
         var hasUpper = confirm("Do you want uppercasecase characters?");
         if(hasUpper === true ) {
           charsToUse = charsToUse.concat(upperCase)
+          requiredChars.push(upperCase[Math.floor(Math.random() * upperCase.length)])
+          console.log(requiredChars)
         }
 
         var hasSpecial = confirm("Do you want special characters?");
         if(hasSpecial === true ) {
           charsToUse = charsToUse.concat(specialChar)
+          requiredChars.push(specialChar[Math.floor(Math.random() * specialChar.length)])
+          console.log(requiredChars)
         } 
         
         console.log("Change to use after if statements");
         console.log(charsToUse);
 
+var passWord = [];
+passWord += requiredChars.join("")
 
+        for (i = requiredChars.length; i < passwordLength; i++) {
+          passWord += charsToUse[Math.floor(Math.random() * charsToUse.length)];
+        }
+
+        return passWord
+
+        
 
        
 
