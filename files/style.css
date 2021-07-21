@@ -14,7 +14,7 @@ body,
 
 body {
   font-family: sans-serif;
-  background-color: white;
+  background-color: greenyellow;
 }
 
 .wrapper {
@@ -28,28 +28,29 @@ header {
   text-align: center;
   padding: 20px;
   padding-top: 0px;
-  color: lightgray;
-  text-shadow: 1px 1px lightskyblue;
+  color: black;
+  font-size: 35;
+  text-shadow: 1px 1px 1px black;
 }
 
 .card {
   background-color: black;
   border-radius: 5px;
   border-width: 1px;
-  box-shadow: lightskyblue;
-  color: lightgray;
+  box-shadow: greenyellow;
+  color:white;
   font-size: 18px;
   margin: 0 auto;
   max-width: 800px;
   padding: 30px 40px;
-  text-shadow: 1px 1px lightskyblue;
+  text-shadow: 1px 1px greenyellow;
 }
 
 .card-header::after {
   content: " ";
   display: block;
   width: 100%;
-  background: lavender;
+  background: white;
   height: 2px;
 }
 
@@ -80,8 +81,8 @@ header {
 }
 
 .btn {
-  border: none;
-  background-color: lightblue;
+  border: 3px solid white;
+  background-color: greenyellow;
   border-radius: 25px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
     0px;
@@ -123,7 +124,7 @@ button[disabled] {
   text-align: center;
   margin-top: 10px;
   margin-bottom: 10px;
-  border: 2px solid lightskyblue;
+  border: 3px solid greenyellow;
   border-radius: 6px;
   resize: none;
   overflow: hidden;
